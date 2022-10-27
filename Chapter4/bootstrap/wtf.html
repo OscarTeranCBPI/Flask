@@ -1,0 +1,11 @@
+<form method="POST">
+    {{ form.hidden_tag() }}
+    {{ form.name.label }} {{ form.name() }}
+    {{ form.submit() }}
+</form>
+
+<form method="POST">
+    {{ form.hidden_tag() }}
+    {{ form.name.label }} {{ form.name(id='my-text-field') }}
+    {{ form.submit() }}
+</form>
