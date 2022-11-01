@@ -35,7 +35,7 @@ Commands examples:
 ```
 ### Migrate
 ```bash
-flask db upgrade
+(venv) $ flask db upgrade
 ```
 
 The complete set of database management commands can be found in the main README bibliography.
