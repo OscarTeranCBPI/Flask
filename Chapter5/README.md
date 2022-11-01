@@ -10,7 +10,7 @@ The commands are:
 ```
 
 ```bash
-pip install flask-migrate
+(venv) $ pip3 install flask-migrate
 ```
 To observe the behavior of flask and the databases we must type the following commands:
 
@@ -37,3 +37,5 @@ Commands examples:
 ```bash
 flask db upgrade
 ```
+
+The complete set of database management commands can be found in the main README bibliography.
