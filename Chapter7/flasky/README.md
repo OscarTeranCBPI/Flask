@@ -46,6 +46,11 @@ The unit tests can be executed as follows:
 (venv) $ flask test
 ```
 
+Before running the application, it is necessary to initialize the databases.
+```bash
+(venv) $ flask db upgrade
+```
+
 #### Running the Application
 ```bash
 (venv) $ flask run
