@@ -59,4 +59,10 @@ The oficial page of Flask show this description about the method:
 Deprecated since version 2.0: ItsDangerous will no longer support JWS in version 2.1. Use a dedicated JWS/JWT library such as authlib.*
 
 Version:
+
 ![itsdangerous](itsdangerous.png)
+
+To resolve this conflict, simply install the latest version compatible with pip:
+```bash
+(venv) $ pip3 install itsdangerous==2.0.1
+```
