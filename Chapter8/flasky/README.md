@@ -49,3 +49,14 @@ signed token that contains a user id inside:
 >>> data
 {'confirm': 23}
 ```
+
+**NOTE**
+
+The oficial page of Flask show this description about the method:
+- itsdangerous.TimedJSONWebSignatureSerializer
+  
+*Warning:
+Deprecated since version 2.0: ItsDangerous will no longer support JWS in version 2.1. Use a dedicated JWS/JWT library such as authlib.*
+
+Version:
+![itsdangerous](itsdangerous.png)
