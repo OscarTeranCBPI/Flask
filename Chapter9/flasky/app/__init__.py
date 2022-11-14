@@ -5,6 +5,7 @@ from flask_moment import Moment
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager
 from config import config
+# from .models import Permission
 
 bootstrap = Bootstrap()
 mail = Mail()
@@ -33,3 +34,10 @@ def create_app(config_name):
     app.register_blueprint(auth_blueprint, url_prefix='/auth')
 
     return app
+
+
+# @main.app_context_processor
+# def inject_permissions():
+#     return dict(Permission=Permission)
+
+
