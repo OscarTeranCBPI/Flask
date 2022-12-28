@@ -1,11 +1,32 @@
-Flasky
-======
+## Chapter 11
+### Blog Posts
 
-This repository contains the source code examples for the second edition of my O'Reilly book [Flask Web Development](http://www.flaskbook.com).
+This chapter describes how to store and the logic behind the creation of a post system. To facilitate the creation of these messages we make use of the faker library.
 
-The commits and tags in this repository were carefully created to match the sequence in which concepts are presented in the book. Please read the section titled "How to Work with the Example Code" in the book's preface for instructions.
+```bash
+(venv) $ pip install faker
+```
 
-For Readers of the First Edition of the Book
---------------------------------------------
+Using the faker library, we easily create a random list of posts and users.
 
-The code examples for the first edition of the book were moved to a different repository: [https://github.com/miguelgrinberg/flasky-first-edition](https://github.com/miguelgrinberg/flasky-first-edition).
+```bash
+(venv) $ flask shell
+from app import fake
+fake.users(100)
+fake.posts(100)
+```
+
+For the best visualization and reading of the posts, we use the following libraries
+
+```bash
+(venv) $ pip install flask-pagedown markdown bleach
+```
+For this chapter there is an error.
+```python
+The function 
+pagination = Post.query.order_by(Post.timestamp.desc()).paginate(
+    page=page, per_page=current_app.config['FLASKY_POSTS_PER_PAGE'],
+    error_out=False)
+```
+requires that the term page be passed as an explicit argument.
+This correction must be made in all calls to the function.
